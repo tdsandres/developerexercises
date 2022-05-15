@@ -26,7 +26,7 @@ def ordenar_diccionario(a): #donde "a" es la lista retornada por la funcion "lis
   menor=101 #inicializo de manera arbitraria el menor y el mayor, con valores que para que la primer edad ingresada sea la mayor y la menor a la vez, pero dentro del rango
   aux = 0
 
-  lista_ordenada = sorted(a, key=lambda p: p["edad"], reverse=True) # utilizo sorted con la funcion lamda para ordenarlos, (lambda ordena de manera descendente, por eso agrego "reverse=True" para que ordene de mayor a menor)
+  lista_ordenada = sorted(a, key=lambda p: p["edad"], reverse=True) # utilizo sorted con la funcion lamda para ordenarlos, (agrego "reverse=True" para que ordene de mayor a menor)
           
   for i in range (elementos_lista):
     b = dict(a[i]) #separo el primer elemento (el primer diccionario) para trabajar con sus valores (B = {id="" , edad=""})
